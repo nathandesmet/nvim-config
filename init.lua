@@ -1,0 +1,8 @@
+require('set')
+require('plugins')
+require('colorschema')
+require('keymappings')
+require('neovide')
+require('filetype')
+require('terminal')
+require('autoread')
