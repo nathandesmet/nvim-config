@@ -32,6 +32,7 @@ vim.keymap.set('n', '<C-p>', function()
 end, telescopeopts)
 
 vim.keymap.set('n', '<Leader>pf', builtin.find_files, telescopeopts)
+vim.keymap.set('n', '<Leader>pF', function() builtin.find_files({ no_ignore = true }) end, telescopeopts)
 vim.keymap.set('n', '<C-space>', builtin.resume, telescopeopts)
 vim.keymap.set('n', '<Leader><leader>', function() builtin.buffers({ sort_lastused = true, ignore_current_buffer = true }) end, telescopeopts)
 vim.keymap.set('n', '<Leader>gs', builtin.git_status, telescopeopts)
