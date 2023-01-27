@@ -58,4 +58,6 @@ require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     })
+
+    use("marilari88/twoslash-queries.nvim")
 end)

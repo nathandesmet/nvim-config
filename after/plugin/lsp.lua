@@ -31,6 +31,14 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set('n', '<Leader>dl', telescope_builtin.diagnostics, opts);
 end)
 
+lsp.configure('tsserver', {
+    on_attach = function(client, bufnr)
+        local s, twoslash_queries = pcall(require, 'twoslash-queries');
+        if (not s) then return end
+
+        twoslash_queries.attach(client, bufnr);
+    end
+})
 
 lsp.nvim_workspace()
 lsp.setup()
