@@ -15,6 +15,7 @@ require('packer').startup(function(use)
     use('kyazdani42/nvim-tree.lua')
     use('kyazdani42/nvim-web-devicons')
 
+    use('folke/zen-mode.nvim')
     use('morhetz/gruvbox')
     use('folke/tokyonight.nvim')
     use('rakr/vim-one')
