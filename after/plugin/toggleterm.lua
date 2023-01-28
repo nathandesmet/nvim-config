@@ -41,3 +41,6 @@ end
 
 update_tuis()
 make_tui_term("k9s", "k9s", "<c-4>")
+_G._toggleterm_update_tuis = update_tuis
+
+vim.cmd [[ command ToggleTermRefresh :lua _toggleterm_update_tuis()<CR> ]]
